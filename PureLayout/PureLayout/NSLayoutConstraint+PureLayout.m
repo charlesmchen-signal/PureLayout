@@ -61,7 +61,7 @@ static BOOL _al_isInstallingCreatedConstraints = NO;
  */
 + (PL__NSMutableArray_of(PL__NSMutableArray_of(NSLayoutConstraint *) *) *)al_arraysOfCreatedConstraints
 {
-    NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
+//    NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
     if (!_al_arraysOfCreatedConstraints) {
         _al_arraysOfCreatedConstraints = [NSMutableArray new];
     }
@@ -145,7 +145,7 @@ static PL__NSMutableArray_of(NSNumber *) *_al_globalConstraintPriorities = nil;
  */
 + (PL__NSMutableArray_of(NSNumber *) *)al_globalConstraintPriorities
 {
-    NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
+//    NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
     if (!_al_globalConstraintPriorities) {
         _al_globalConstraintPriorities = [NSMutableArray new];
     }
@@ -214,7 +214,7 @@ static PL__NSMutableArray_of(NSString *) *_al_globalConstraintIdentifiers = nil;
  */
 + (PL__NSMutableArray_of(NSString *) *)al_globalConstraintIdentifiers
 {
-    NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
+//    NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
     if (!_al_globalConstraintIdentifiers) {
         _al_globalConstraintIdentifiers = [NSMutableArray new];
     }
